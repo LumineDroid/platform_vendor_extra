@@ -41,6 +41,9 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true
 
+# Fonts
+include vendor/extra/config/fonts.mk
+
 # GameProps
 TARGET_PRODUCT_PROP += vendor/extra/gameprops/gameprops.prop
 
