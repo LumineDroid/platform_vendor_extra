@@ -17,6 +17,10 @@ else
     PRODUCT_COPY_FILES += $(EXTRA_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
+# Charger
+PRODUCT_PACKAGES += \
+    product_charger_res_images
+
 # Fonts
 PRODUCT_COPY_FILES += \
     $(EXTRA_PATH)/fonts/GoogleSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Regular.ttf \
