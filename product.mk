@@ -57,4 +57,5 @@ endif
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     LumineFrameworksOverlay
