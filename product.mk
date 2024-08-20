@@ -14,7 +14,7 @@ PRODUCT_PACKAGES += \
 
 # BlackTheme
 PRODUCT_PACKAGES += \
-    LineageBlackTheme
+    AndroidBlackThemeOverlay
 
 # Bootanimation
 include $(EXTRA_PATH)/config/bootanimation.mk
