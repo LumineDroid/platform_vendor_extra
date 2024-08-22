@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     ClockFontPlaidEventOverlay \
     ClockFontPlantsLettersOverlay \
     ClockFontPlayOverlay \
+    ClockFontPoppinsSourceOverlay \
     ClockFontQuandoOverlay \
     ClockFontQuickSouthOverlay \
     ClockFontRedressedOverlay \
@@ -141,6 +142,7 @@ PRODUCT_PACKAGES += \
     FontOneUISansOverlay \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
+    FontPoppinsSourceOverlay \
     FontOswaldOverlay \
     FontPlayOverlay \
     FontQuandoOverlay \
