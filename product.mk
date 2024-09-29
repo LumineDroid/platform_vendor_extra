@@ -23,7 +23,9 @@ PRODUCT_PACKAGES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    GameSpace
+    GameSpace \
+    LMOFreeform \
+    LMOFreeformSidebar
 
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
