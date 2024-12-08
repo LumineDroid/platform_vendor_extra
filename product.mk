@@ -7,6 +7,9 @@
 
 EXTRA_PATH := vendor/extra
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 # Clocks (SystemUI)
 PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
