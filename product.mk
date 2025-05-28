@@ -5,10 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-EVO_EXTRAS_PATH := vendor/extras
+EXTRA_PATH := vendor/extra
 
 # Game Props
-TARGET_PRODUCT_PROP += $(EVO_EXTRAS_PATH)/gameprops/product.prop
+TARGET_PRODUCT_PROP += $(EXTRA_PATH)/gameprops/product.prop
 
 # Accord
 TARGET_INCLUDE_ACCORD ?= true
@@ -481,5 +481,5 @@ $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/extras/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-    $(call find-copy-subdir-files,*,vendor/extras/prebuilt/product/media/audio/ui,$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui)
+    $(call find-copy-subdir-files,*,vendor/extra/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
+    $(call find-copy-subdir-files,*,vendor/extra/prebuilt/product/media/audio/ui,$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui)
