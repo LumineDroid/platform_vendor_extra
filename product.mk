@@ -7,16 +7,6 @@
 
 EXTRA_PATH := vendor/extra
 
-# Game Props
-TARGET_PRODUCT_PROP += $(EXTRA_PATH)/gameprops/product.prop
-
-# Accord
-TARGET_INCLUDE_ACCORD ?= true
-ifeq ($(TARGET_INCLUDE_ACCORD),true)
-PRODUCT_PACKAGES += \
-    Accord
-endif
-
 # Clocks (SystemUI)
 PRODUCT_PACKAGES += \
     SystemUIClocks-BigNum \
@@ -363,118 +353,9 @@ PRODUCT_PACKAGES += \
     XperiaWiFiOverlay \
     ZigZagWiFiOverlay
 
-# Brightness slider styles
-PRODUCT_PACKAGES += \
-    BrightnessSliderAcunOverlay \
-    BrightnessSliderBangOverlay \
-    BrightnessSliderCyberpunkOverlay \
-    BrightnessSliderFilledOverlay \
-    BrightnessSliderGradiantOverlay \
-    BrightnessSliderLeafyOutlineOverlay \
-    BrightnessSliderLightyOverlay \
-    BrightnessSliderLineOverlay \
-    BrightnessSliderMinimalThumbOverlay \
-    BrightnessSliderNeumorphOverlay \
-    BrightnessSliderOldSchoolThumbOverlay \
-    BrightnessSliderOutlineOverlay \
-    BrightnessSliderRoundedClipOverlay \
-    BrightnessSliderThinOverlay \
-    BrightnessSliderThumbSliderOverlay \
-    BrightnessSliderTranslucentOverlay
-
-# Navbar styles
-ifeq ($(WITH_GMS),true)
-PRODUCT_PACKAGES += \
-    NavbarAndroidPixelLauncherOverlay \
-    NavbarAsusPixelLauncherOverlay \
-    NavbarDoraPixelLauncherOverlay \
-    NavbarEvolutionPixelLauncherOverlay \
-    NavbarMotoPixelLauncherOverlay \
-    NavbarNexusPixelLauncherOverlay \
-    NavbarOldPixelLauncherOverlay \
-    NavbarOnePlusPixelLauncherOverlay \
-    NavbarOneUiPixelLauncherOverlay \
-    NavbarSammyPixelLauncherOverlay \
-    NavbarTecnoCamonPixelLauncherOverlay
-else
-PRODUCT_PACKAGES += \
-    NavbarAndroidOverlay \
-    NavbarAsusOverlay \
-    NavbarDoraOverlay \
-    NavbarEvolutionOverlay \
-    NavbarMotoOverlay \
-    NavbarNexusOverlay \
-    NavbarOldOverlay \
-    NavbarOnePlusOverlay \
-    NavbarOneUiOverlay \
-    NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay
-endif
-
-# QS UI Style
-PRODUCT_PACKAGES += \
-    A11QSUI \
-    QSOutline \
-    QSTwoToneAccent \
-    QSTwoToneAccentTrans \
-    QSShaded \
-    QSCyberPunk \
-    QSNeumorph \
-    QSReflected \
-    QSSurround \
-    QSThin
-
-# Progress Bar Themes
-PRODUCT_PACKAGES += \
-    PGB_BlockyThumb \
-    PGB_MinimalThumb \
-    PGB_OutlineThumb \
-    PGB_Shishu
-
-# Notification Themes
-PRODUCT_PACKAGES += \
-    NotifCyberPunk \
-    NotifDuoline \
-    NotifFluid \
-    NotifIOS \
-    NotifLayers
-
-# Power Menu Themes
-PRODUCT_PACKAGES += \
-    PowerCyberPunk \
-    PowerDuoline \
-    PowerIOS \
-    PowerLayers
-
-# BetterQS
-PRODUCT_PACKAGES += \
-    BetterQS
-
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
-
-# Udfps
-ifeq ($(TARGET_HAS_UDFPS),true)
-PRODUCT_PACKAGES += \
-    UdfpsAnimations \
-    UdfpsIcons
-endif
-
-# Utility Overlays
-PRODUCT_PACKAGES += \
-    HideSmartSpace \
-    SmartSpaceOffset \
-    HideClock
-
-# Volume Styles
-PRODUCT_PACKAGES += \
-    VolumeDoubleLayer \
-    VolumeGradient \
-    VolumeNeumorph \
-    VolumeNeumorphOutline \
-    VolumeOutline \
-    VolumeShadedLayer
 
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
