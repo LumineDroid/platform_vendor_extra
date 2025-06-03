@@ -16,3 +16,7 @@ else ifeq ($(TARGET_BOOT_ANIMATION_RES),720)
 else
     PRODUCT_COPY_FILES += $(EXTRA_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
+
+# Overlays
+PRODUCT_PACKAGES += \
+    LumineFrameworksOverlay

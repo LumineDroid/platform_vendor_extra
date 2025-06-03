@@ -1,0 +1,10 @@
+//
+// Copyright (C) 2025 LumineDroid
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "LumineFrameworksOverlay",
+    product_specific: true,
+}
