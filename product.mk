@@ -263,6 +263,10 @@ PRODUCT_PACKAGES += \
     IconShapeTeardropOverlay \
     IconShapeVesselOverlay
 
+# Overlays
+PRODUCT_PACKAGES += \
+    LumineFrameworksOverlay
+
 # Signal Icons
 PRODUCT_PACKAGES += \
     AiirOSignalOverlay \
