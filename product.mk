@@ -269,6 +269,9 @@ PRODUCT_PACKAGES += \
     IconShapeVesselOverlay
 
 # Overlays
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/extra/overlay/common
+
 PRODUCT_PACKAGES += \
     LumineFrameworksOverlay
 
