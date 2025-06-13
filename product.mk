@@ -31,6 +31,13 @@ PRODUCT_PACKAGES += \
     product_charger_res_images \
     product_charger_res_images_vendor
 
+# Enable Material Design 3 Expressive
+LUMINE_EXPRESSIVE ?= true
+ifeq ($(LUMINE_EXPRESSIVE), true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    is_expressive_design_enabled=true
+endif
+
 # Fonts
 PRODUCT_COPY_FILES += \
     $(EXTRA_PATH)/fonts/GoogleSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSans-Regular.ttf \
