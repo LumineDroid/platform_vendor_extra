@@ -33,6 +33,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=0
 endif
 
+# Enable Material Design 3 Expressive
+PRODUCT_PRODUCT_PROPERTIES += \
+    is_expressive_design_enabled=true
+
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
