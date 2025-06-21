@@ -6,6 +6,12 @@
 
 EXTRA_PATH := vendor/extra
 
+# APEX
+DISABLE_DEXPREOPT_CHECK := true
+
+PRODUCT_PACKAGES += \
+    com.google.android.permission
+
 # Bootanimation
 include $(EXTRA_PATH)/config/bootanimation.mk
 
