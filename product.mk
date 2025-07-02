@@ -31,6 +31,9 @@ PRODUCT_COPY_FILES += \
     $(EXTRA_PATH)/fonts/GoogleSansFlex-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoogleSansFlex-Regular.ttf \
     $(EXTRA_PATH)/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
+# GMS
+$(call inherit-product, vendor/gms/products/gms.mk)
+
 # Overlays
 PRODUCT_PACKAGES += \
     LumineFrameworksOverlay
