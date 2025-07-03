@@ -40,7 +40,13 @@ PRODUCT_COPY_FILES += \
     $(EXTRA_PATH)/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
 # GMS
+WITH_GMS ?= true
+ifeq ($(WITH_GMS),true)
 $(call inherit-product, vendor/gms/products/gms.mk)
+else
+PRODUCT_PACKAGES += \
+    LatinIME
+endif
 
 # Overlays
 PRODUCT_PACKAGES += \
