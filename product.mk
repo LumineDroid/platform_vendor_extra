@@ -6,6 +6,14 @@
 
 EXTRA_PATH := vendor/extra
 
+# Blur
+LUMINE_BLUR ?= true
+ifeq ($(LUMINE_BLUR), true)
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+endif
+
 # Bootanimation
 ifeq ($(TARGET_BOOT_ANIMATION_RES),1080)
      PRODUCT_COPY_FILES += $(EXTRA_PATH)/bootanimation/bootanimation_1080.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
