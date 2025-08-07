@@ -81,6 +81,9 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(EXTRA_PATH)/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
+# GameProps
+TARGET_PRODUCT_PROP += vendor/extra/gameprops/gameprops.prop
+
 # LMOFreeform
 PRODUCT_PACKAGES += \
     LMOFreeform \
