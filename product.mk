@@ -8,3 +8,7 @@ EXTRA_PATH := vendor/extra
 
 # Bootanimation
 include $(EXTRA_PATH)/config/bootanimation.mk
+
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworkOverlayLumine
