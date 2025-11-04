@@ -80,3 +80,8 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(EXTRA_PATH)/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
+# Overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/extra/overlay/common/packages/apps/Launcher3
