@@ -12,6 +12,10 @@ DISABLE_DEXPREOPT_CHECK := true
 PRODUCT_PACKAGES += \
     com.google.android.permission
 
+# BlackTheme
+PRODUCT_PACKAGES += \
+    LineageBlackTheme
+
 # Bootanimation
 include $(EXTRA_PATH)/config/bootanimation.mk
 
