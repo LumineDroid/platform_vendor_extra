@@ -37,54 +37,6 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true
 
-# Fonts
-PRODUCT_PACKAGES += \
-    fonts_customization.xml \
-    FontAccuratistOverlay \
-    FontAclonicaOverlay \
-    FontAmaranteOverlay \
-    FontBariolOverlay \
-    FontCagliostroOverlay \
-    FontCoconOverlay \
-    FontComfortaaOverlay \
-    FontComicSansOverlay \
-    FontCookieRunOverlay \
-    FontCoolstoryOverlay \
-    FontExotwoOverlay \
-    FontFifa2018Overlay \
-    FontGrandHotelOverlay \
-    FontGoogleSansFlexOverlay \
-    FontHarmonySansOverlay \
-    FontLatoOverlay \
-    FontLinotteOverlay \
-    FontNokiaPureOverlay \
-    FontNothingDotHeadlineOverlay \
-    FontNothingDotOverlay \
-    FontNunitoOverlay \
-    FontOneplusSansOverlay \
-    FontOneplusSlateOverlay \
-    FontOswaldOverlay \
-    FontPlayOverlay \
-    FontQuandoOverlay \
-    FontRedressedOverlay \
-    FontReemKufiOverlay \
-    FontRobotoCondensedOverlay \
-    FontRookeryOverlay \
-    FontRubikOverlay \
-    FontSanFranciscoDisplayProSourceOverlay \
-    FontSamsungOneOverlay \
-    FontSansSerifOverlay \
-    FontSonySketchOverlay \
-    FontStoropiaOverlay \
-    FontSurferOverlay \
-    FontUbuntuOverlay
-
-$(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
-$(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(EXTRA_PATH)/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-
 # GameProps
 TARGET_PRODUCT_PROP += vendor/extra/gameprops/gameprops.prop
 
