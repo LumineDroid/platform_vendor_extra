@@ -25,6 +25,15 @@ PRODUCT_PACKAGES += \
     custom_charger_animation \
     custom_charger_animation_vendor
 
+# Clocks
+PRODUCT_PACKAGES += \
+    SystemUIClocks-BigNum \
+    SystemUIClocks-Calligraphy \
+    SystemUIClocks-Growth \
+    SystemUIClocks-Inflate \
+    SystemUIClocks-Metro \
+    SystemUIClocks-NumOverlap
+
 # Enable blur
 TARGET_ENABLE_BLUR ?= true
 ifeq ($(TARGET_ENABLE_BLUR),true)
