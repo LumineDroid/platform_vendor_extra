@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Headline / Google Sans overlay -->
+    <string name="font_google_sans_flex_overlay" translatable="false">Google Sans Flex</string>
+
+</resources>

@@ -1,0 +1,5 @@
+runtime_resource_overlay {
+    name: "FontGoogleSansFlexOverlay",
+    product_specific: true,
+    theme: "FontGoogleSansFlex",
+}
