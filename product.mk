@@ -48,9 +48,9 @@ $(call inherit-product, vendor/extra/fonts/fonts.mk)
 TARGET_PRODUCT_PROP += vendor/extra/gameprops/gameprops.prop
 
 # LMOFreeform
-PRODUCT_PACKAGES += \
-    LMOFreeform \
-    LMOFreeformSidebar
+#PRODUCT_PACKAGES += \
+#    LMOFreeform \
+#    LMOFreeformSidebar
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay/common
