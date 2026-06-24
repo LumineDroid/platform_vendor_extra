@@ -6,12 +6,6 @@
 
 EXTRA_PATH := vendor/extra
 
-# APEX
-DISABLE_DEXPREOPT_CHECK := true
-
-PRODUCT_PACKAGES += \
-    com.google.android.permission
-
 # BlackTheme
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
