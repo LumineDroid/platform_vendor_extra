@@ -157,8 +157,11 @@
     </family-list>
     <alias name="google-sans-flex-medium" to="google-sans-flex" weight="500"/>
     <family customizationType="new-named-family" name="google-sans-flex-clock" fallback="google-sans-flex">
-        <font style="normal" weight="400">GoogleSansFlexClock-Regular.ttf</font>
+        <font style="normal" weight="400">GoogleSansFlexClock-Regular.ttf
+            <axis tag="ROND" stylevalue="100"/>
+        </font>
     </family>
+    <alias name="google-sans-clock" to="google-sans-flex-clock"/>
 
     <!-- baseline -->
     <!-- display -->
